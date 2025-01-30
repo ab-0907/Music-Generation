@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Generation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Music Generation</h1>
+    <form action="/generate" method="post">
+        <label for="num-bars">Number of Bars:</label>
+        <input type="number" id="num-bars" name="num-bars" required>
+        <!-- Add other input fields for your parameters... -->
+
+        <input type="submit" value="Generate Music">
+    </form>
+</body>
+</html>
